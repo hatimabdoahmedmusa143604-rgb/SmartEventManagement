@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - SmartEvent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img
+            src="logo.png"
+            alt="Marwadi University Logo"
+            class="university-logo"
+        >
+
+        <div class="logo-text">
+
+            <div class="university-name">
+                Marwadi University
+            </div>
+
+            <div class="system-name">
+                SmartEvent Management
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="events-header">
+
+        <p>DISCOVER</p>
+
+        <h1>
+            Upcoming Events
+        </h1>
+
+        <span>
+            Find and register for exciting campus events.
+        </span>
+
+    </section>
+
+
+    <div class="event-controls">
+
+        <input
+            type="text"
+            id="eventSearch"
+            placeholder="🔎 Search events..."
+        >
+
+        <select id="eventFilter">
+
+            <option value="all">
+                All Events
+            </option>
+
+            <option value="Workshop">
+                Workshop
+            </option>
+
+            <option value="Competition">
+                Competition
+            </option>
+
+            <option value="Sports">
+                Sports
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <section class="events-container">
+
+
+        <!-- AI Workshop -->
+
+        <div class="event-card" data-category="Workshop">
+
+            <div class="event-image">
+                🤖
+            </div>
+
+            <div class="event-content">
+
+                <span class="event-type">
+                    WORKSHOP
+                </span>
+
+                <h2>
+                    AI Workshop
+                </h2>
+
+                <p>
+                    Learn the fundamentals of Artificial Intelligence
+                    and explore modern AI technologies.
+                </p>
+
+                <div class="event-info">
+
+                    <span>
+                        📅 10 Oct 2026
+                    </span>
+
+                    <span>
+                        📍 Computer Lab
+                    </span>
+
+                    <span>
+                        🪑 30 Seats
+                    </span>
+
+                </div>
+
+                <a href="details.html" class="btn primary">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Coding Competition -->
+
+        <div class="event-card" data-category="Competition">
+
+            <div class="event-image">
+                💻
+            </div>
+
+            <div class="event-content">
+
+                <span class="event-type">
+                    COMPETITION
+                </span>
+
+                <h2>
+                    Coding Competition
+                </h2>
+
+                <p>
+                    Test your programming skills and compete
+                    with other talented students.
+                </p>
+
+                <div class="event-info">
+
+                    <span>
+                        📅 15 Oct 2026
+                    </span>
+
+                    <span>
+                        📍 CSE Lab
+                    </span>
+
+                    <span>
+                        🪑 50 Seats
+                    </span>
+
+                </div>
+
+                <a href="details.html" class="btn primary">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Sports Day -->
+
+        <div class="event-card" data-category="Sports">
+
+            <div class="event-image">
+                🏆
+            </div>
+
+            <div class="event-content">
+
+                <span class="event-type">
+                    SPORTS
+                </span>
+
+                <h2>
+                    Sports Day
+                </h2>
+
+                <p>
+                    Participate in exciting sports activities
+                    and enjoy a fun university experience.
+                </p>
+
+                <div class="event-info">
+
+                    <span>
+                        📅 20 Oct 2026
+                    </span>
+
+                    <span>
+                        📍 University Ground
+                    </span>
+
+                    <span>
+                        🪑 100 Seats
+                    </span>
+
+                </div>
+
+                <a href="details.html" class="btn primary">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Smart Event Management System
+    </p>
+
+    <p>
+        Marwadi University
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

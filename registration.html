@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - SmartEvent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img
+            src="logo.png"
+            alt="Marwadi University Logo"
+            class="university-logo"
+        >
+
+        <div class="logo-text">
+
+            <div class="university-name">
+                Marwadi University
+            </div>
+
+            <div class="system-name">
+                SmartEvent Management
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="registration-page">
+
+        <div class="registration-header">
+
+            <p>EVENT REGISTRATION</p>
+
+            <h1>
+                Register for AI Workshop
+            </h1>
+
+            <span>
+                Fill in your details to reserve your seat.
+            </span>
+
+        </div>
+
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+
+                <label for="studentName">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="enrollment">
+                    Enrollment Number
+                </label>
+
+                <input
+                    type="text"
+                    id="enrollment"
+                    placeholder="Enter your enrollment number"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="department">
+                    Department
+                </label>
+
+                <select id="department" required>
+
+                    <option value="">
+                        Select Department
+                    </option>
+
+                    <option value="CSE">
+                        CSE
+                    </option>
+
+                    <option value="AI/ML">
+                        AI / ML
+                    </option>
+
+                    <option value="Data Science">
+                        Data Science
+                    </option>
+
+                    <option value="Cyber Security">
+                        Cyber Security
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="seats">
+                    Number of Seats
+                </label>
+
+                <select id="seats" required>
+
+                    <option value="">
+                        Select Seats
+                    </option>
+
+                    <option value="1">
+                        1 Seat
+                    </option>
+
+                    <option value="2">
+                        2 Seats
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn primary register-btn">
+
+                Confirm Registration
+
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Smart Event Management System
+    </p>
+
+    <p>
+        Marwadi University
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

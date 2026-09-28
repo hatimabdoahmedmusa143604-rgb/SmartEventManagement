@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Confirmed - SmartEvent</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img
+            src="logo.png"
+            alt="Marwadi University Logo"
+            class="university-logo"
+        >
+
+        <div class="logo-text">
+
+            <div class="university-name">
+                Marwadi University
+            </div>
+
+            <div class="system-name">
+                SmartEvent Management
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="confirmation-page">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <p class="success-label">
+            REGISTRATION SUCCESSFUL
+        </p>
+
+        <h1>
+            You're Registered!
+        </h1>
+
+        <p class="confirmation-text">
+            Your registration for the AI Workshop has been confirmed.
+        </p>
+
+
+        <div class="registration-summary">
+
+            <h2>
+                Registration Details
+            </h2>
+
+            <p>
+                <strong>Student Name:</strong>
+                <span id="confirmName">-</span>
+            </p>
+
+            <p>
+                <strong>Enrollment Number:</strong>
+                <span id="confirmEnrollment">-</span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="confirmEmail">-</span>
+            </p>
+
+            <p>
+                <strong>Department:</strong>
+                <span id="confirmDepartment">-</span>
+            </p>
+
+            <p>
+                <strong>Seats:</strong>
+                <span id="confirmSeats">-</span>
+            </p>
+
+            <p>
+                <strong>Event:</strong>
+                AI Workshop
+            </p>
+
+            <p>
+                <strong>Date:</strong>
+                10 October 2026
+            </p>
+
+            <p>
+                <strong>Location:</strong>
+                Computer Lab
+            </p>
+
+        </div>
+
+
+        <a href="events.html" class="btn primary">
+            Explore More Events
+        </a>
+
+        <a href="index.html" class="home-link">
+            Back to Home
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Smart Event Management System
+    </p>
+
+    <p>
+        Marwadi University
+    </p>
+
+</footer>
+
+
+<script>
+
+    const data = JSON.parse(
+        localStorage.getItem("registrationData")
+    );
+
+    if (data) {
+
+        document.getElementById("confirmName").textContent =
+            data.studentName;
+
+        document.getElementById("confirmEnrollment").textContent =
+            data.enrollment;
+
+        document.getElementById("confirmEmail").textContent =
+            data.email;
+
+        document.getElementById("confirmDepartment").textContent =
+            data.department;
+
+        document.getElementById("confirmSeats").textContent =
+            data.seats;
+    }
+
+</script>
+
+</body>
+
+</html>
